@@ -21,8 +21,7 @@ int main()
     for(i=0;i<10000;i++){
         long long sum=0;
         for(j=0;j<a.size();j++){
-            long long x=abs(i-a[j]);
-            sum=sum+((x*(x+1))/2);
+            sum=sum+abs(i-a[j]);
         }
         if(sum<ans){
             ans=sum;
